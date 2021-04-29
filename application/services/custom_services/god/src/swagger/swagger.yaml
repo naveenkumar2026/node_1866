@@ -55,9 +55,9 @@ components:
       god:
          type: object
          properties:
-            Enter_Name:
+            enter_name:
                type: "string"
                description: Description
-            Enter_Email:
+            enter_email:
                type: "string"
                description: Description

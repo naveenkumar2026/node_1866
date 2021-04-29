@@ -24,6 +24,8 @@ const routes: Routes = [
        { path: '', component: TemplateComponent, pathMatch: 'full'   } ,
 { path: 'admin', component: AdminComponent, canActivate: [AuthGuard] },
 
+{ path : 'create', loadChildren: () => import('./create/create.module').then(m => m.CreateModule), canActivate: [AuthGuard] } , 
+{ path : 'getall', loadChildren: () => import('./getall/getall.module').then(m => m.GetallModule), canActivate: [AuthGuard] } , 
 ];
 
 @NgModule({
